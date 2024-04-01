@@ -8,31 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
  
 	</head>
-  <body>
-   <div class="p-3 mb-2 bg-secondary text-white">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <div class="container text-center">
-	  <!-- Content here -->
-	   <h1 class="display-2">WordCamp Houston</h1> </div>
-	  	  
-	  </div>
-	 <div class="col-lg-6 mx-auto">
-		  <div class="container text-center">
-		<div class="p-3 mb-2 bg-dark-subtle text-dark-dark">
-			  <p class="lead">
-  WordCamp is hosting a conference in Houston. Coming Soon!
-			  </p>			</div>		 </div>
-  <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Enter your email..." aria-label="Enter your email..." aria-describedby="button-addon2">
-      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#register">Sign Up</button>
-	  
 
-    </div> 
-</div> 
-	  
-  </body>
-			<!-- navbar -->
-	<data-spy="scroll" data-target=".navbar">
+ <body>
+		<!-- Alert -->	
+	 <div class="alert alert-dark" role="alert">
+  A simple dark alert—check it out!
+</div>
+	 
+	 <!-- /Alert -->
+	 <!-- navbar -->
+	 <div data-spy="scroll" data-target=".navbar" </div>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     <a class="navbar-brand order-1 mr-0" href="#" target="_blank">Presented by WordCamp Houston</a>
@@ -62,17 +47,17 @@
 		
 		<!-- jumbotron -->
 		<div class="jumbotron jumbotron-fluid">
-  <div class="container">
+  <div class="container text-sm-center pt-5">
     <h1 class="display-4">WordCamp Houston</h1>
     <p class="lead">A One-day Conference About WordPress</p>
-	  <div class="container text-sm-center pt-5"> </div>
+	 
 <div class="mt-5">
   <button type="button" class="btn btn-secondary btn-lg"data-toggle="modal" data-target="#register">Register Now</button>
   <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
 </div>
 <!-- /jumbotron -->
-	
-	 <body>
+	  </body>
+<body>
 		  
 <div class="container pt-4">
   <!-- about -->
@@ -190,7 +175,7 @@
   </li>
 	 <li class="list-group-item">
     <div class="d-flex justify-content-between">
-      <h5 class="mb-1">KTime Management</h5>
+      <h5 class="mb-1">&nbsp;</h5>
       <span class="badge badge-pill badge-secondary p-2">10:00am</span>
     </div>
     <p class="mb-1">Laney Berriel</p>
@@ -204,7 +189,7 @@
   </li>
 	 <li class="list-group-item">
     <div class="d-flex justify-content-between">
-      <h5 class="mb-1">Lunchtime</h5>
+      <h5 class="mb-1">&nbsp;</h5>
       <span class="badge badge-pill badge-secondary p-2">12:00am</span>
     </div>
     <p class="mb-1">Pizza Party</p>
@@ -272,7 +257,7 @@
         <li class="nav-item">
          <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
+    WordCamp
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="#">Action</a>
@@ -288,12 +273,12 @@
     </div>
   </div>
 <!-- /footer -->
-	  <!-- Modal -->
-<div class="modal fade" register="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Register for WordCamp Conference</h5>
+        <h5 class="modal-title" register="exampleModalLabel">Register for WordCamp Conference</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -304,10 +289,38 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
+		  
+		  <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Event Attending</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Houston Event</option>
+      <option>Colorado Spings Event</option>
+      <option>San Diego Event</option>
+      <option>Tampa Bay Event</option>
+      <option>Washington D.C. Event</option>
+    </select>
+  </div>
+    <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">What do you expect to get out of this WordCamp Confrence? </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
       </div>
     </div>
   </div>
 </div>
-
 	
 </html>
